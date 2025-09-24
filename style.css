@@ -95,3 +95,11 @@ button:hover {
     max-height: 100%;
     display: block;
 }
+
+.credits {
+    font-size: 0.8em; /* Make the font smaller */
+    margin-top: 10px; /* Add some space above */
+    padding-top: 5px; /* Add space above the border */
+    border-top: 1px solid #ccc; /* Add a line above */
+    text-align: center; /* Center the text */
+}
