@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment reakčního času</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen" class="screen active">
+            <h1>Měření reakčního času</h1>
+            <p>Objeví se díra.</p>
+            <p>Krtek se začne plížit...</p>
+            <p>Klikni co nejrychleji</p>
+            <p>Celkem 10 kol.</p>
+            <div class="illustration-images">
+                <img src="img/dira.png" alt="Hole" class="illustration-img">
+                <img src="img/ruce.png" alt="Mole Sneaking" class="illustration-img">
+                <img src="img/krtzmrd.png" alt="Mole Visible" class="illustration-img">
+            </div>
+            <button id="start-button">Spustit experiment</button>
+        </div>
+
+        <div id="game-screen" class="screen">
+            <!-- Round counter removed -->
+            <div id="mole-container">
+                <img id="mole-image" src="img/hole.png" alt="Mole Hole">
+            </div>
+        </div>
+
+        <div id="end-screen" class="screen">
+            <h1>Experiment dokončen!</h1>
+            <p><span id="average-reaction-time"></span></p>
+            <button id="download-results-button">Stáhnout výsledky (CSV)</button>
+            <button id="restart-button">Restartovat experiment</button>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff; /* Solid white background */
+    font-family: "Futura Light", "Century Gothic", sans-serif; /* Specified font stack */
+    color: #000; /* Changed text color to black */
+    cursor: url('img/kladivo1.png') 64 64, auto !important; /* Default hammer cursor, centered hotspot */
+}
+
+body:active {
+    cursor: url('img/kladivo2.png') 64 64, auto !important; /* Hammer click cursor, centered hotspot */
+}
+
+#mole-container {
+    cursor: url('img/kladivo1.png') 64 64, auto !important; /* Ensure custom cursor on mole container, centered hotspot */
+}
+
+#mole-container:active {
+    cursor: url('img/kladivo2.png') 64 64, auto !important; /* Ensure custom click cursor on mole container, centered hotspot */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    /* Removed border, border-radius, and box-shadow */
+    max-width: 600px;
+    width: 90%;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+.illustration-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between images */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.illustration-img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    /* Removed border and box-shadow */
+}
+
+h1, h2 {
+    color: #000; /* Changed heading color to black for consistency */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #ffb6c1; /* Light pink */
+    color: black; /* Changed text color to black for contrast */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #ff99aa; /* Slightly darker pink on hover */
+}
+
+#mole-container {
+    width: 200px; /* Adjust as needed for image size */
+    height: 200px; /* Adjust as needed for image size */
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures image stays within container */
+}
+
+#mole-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
